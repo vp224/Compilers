@@ -1,0 +1,40 @@
+0: func printi starts
+1: func printi ends
+2: func prints starts
+3: func prints ends
+4: func readi starts
+5: func readi ends
+6: func main starts
+7: param .LC0
+8: call prints 1
+9: func main ends
+##############################SymbolTABLE(mainSymTab)##############################
+Name	Type		Size	Offset	Initval
+printi	function	0	0	NULL
+prints	function	0	0	NULL
+readi	function	0	0	NULL
+main	function	0	4	NULL
+##################################################
+##############################NestedSymbolTABLE(main)##############################
+Name	Type		Size	Offset	Initval
+retVal	int		4	0	NULL
+prints	int		4	4	NULL
+.LC0	int		4	8	NULL
+t0	int		4	12	NULL
+###########################################
+##############################NestedSymbolTABLE(printi)##############################
+Name	Type		Size	Offset	Initval
+num	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+##############################NestedSymbolTABLE(prints)##############################
+Name	Type		Size	Offset	Initval
+c	char		1	0	NULL
+retVal	int		4	1	NULL
+###########################################
+##############################NestedSymbolTABLE(readi)##############################
+Name	Type		Size	Offset	Initval
+eP	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+YESSSSSS

@@ -1,0 +1,96 @@
+0: func f starts
+1: func f ends
+2: func f1 starts
+3: t0 = 0
+4: temp1 = t0
+5: t1 = a + b
+6: temp1 = t1
+7: return temp1
+8: func f1 ends
+9: func f2 starts
+10: t2 = 0
+11: temp1 = t2
+12: t3 = a * b
+13: temp1 = t3
+14: return temp1
+15: func f2 ends
+16: func main starts
+17: t4 = 100
+18: a = t4
+19: t5 = 100
+20: y1 = t5
+21: t6 = 1001
+22: y4 = t6
+23: t7 = 123
+24: y3 = t7
+25: param a
+26: param b
+27: param a
+28: param b
+29: param a
+30: call f1 5
+31: c = t8
+32: param a
+33: param b
+34: call f2 2
+35: c = t9
+36: t10 = 0
+37: return t10
+38: func main ends
+##############################SymbolTABLE(mainSymTab)##############################
+Name	Type		Size	Offset	Initval
+f	function	0	0	NULL
+f1	function	0	24	NULL
+y1	int		4	8	NULL
+y3	int		4	12	NULL
+y4	int		4	16	NULL
+f2	function	0	12	NULL
+main	function	0	4	NULL
+##################################################
+##############################NestedSymbolTABLE(f)##############################
+Name	Type		Size	Offset	Initval
+a	int		4	0	NULL
+b	int		4	4	NULL
+retVal	int		4	8	NULL
+###########################################
+##############################NestedSymbolTABLE(f1)##############################
+Name	Type		Size	Offset	Initval
+a	int		4	0	NULL
+b	int		4	4	NULL
+c	int		4	8	NULL
+d	int		4	12	NULL
+e	int		4	16	NULL
+retVal	int		4	20	NULL
+t0	int		4	24	0
+temp1	int		4	36	0
+t1	int		4	32	NULL
+###########################################
+##############################NestedSymbolTABLE(f2)##############################
+Name	Type		Size	Offset	Initval
+a	int		4	0	NULL
+b	int		4	4	NULL
+retVal	int		4	8	NULL
+t2	int		4	12	0
+temp1	int		4	24	0
+t3	int		4	20	NULL
+###########################################
+##############################NestedSymbolTABLE(main)##############################
+Name	Type		Size	Offset	Initval
+retVal	int		4	0	NULL
+a	int		4	12	NULL
+b	int		4	16	NULL
+c	int		4	20	NULL
+t4	int		4	16	100
+y1	int		4	20	NULL
+t5	int		4	24	100
+y4	int		4	28	NULL
+t6	int		4	32	1001
+y3	int		4	36	NULL
+t7	int		4	40	123
+f1	int		4	44	NULL
+t8	int		4	48	NULL
+f2	int		4	52	NULL
+t9	int		4	56	NULL
+t10	int		4	60	0
+###########################################
+YESSSSSS

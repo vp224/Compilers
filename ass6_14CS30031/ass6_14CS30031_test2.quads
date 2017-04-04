@@ -1,0 +1,133 @@
+0: func printi starts
+1: func printi ends
+2: func prints starts
+3: func prints ends
+4: func readi starts
+5: func readi ends
+6: func main starts
+7: t0 = 100
+8: t = t0
+9: t1 = 0
+10: i = t1
+11: t2 = 100
+12: t3 = 1
+13: if i <t2 goto 20
+14: t3 = 0
+15: goto 23
+16: goto 23
+17: t4 = i
+18: i = i + 1
+19: goto 11
+20: t5 = t + i
+21: i = t5
+22: goto 17
+23: t6 = t
+24: t = t - 1
+25: goto 43
+26: t7 = 10
+27: n = t7
+28: t8 = 0
+29: i = t8
+30: t9 = 1
+31: if i <n goto 38
+32: t9 = 0
+33: goto 23
+34: goto 42
+35: t10 = i
+36: i = i + 1
+37: goto 30
+38: t11 = 10
+39: t12 = m + t11
+40: m = t12
+41: goto 35
+42: goto 23
+43: if t6 == 0 goto 46
+44: t6 = ~1
+45: goto 26
+46: t13 = 100
+47: t14 = t % t13
+48: t15 = 33
+49: t16 = 1
+50: if t14 ==t15 goto 54
+51: t16 = 0
+52: goto 57
+53: goto 60
+54: t17 = t
+55: t = t + 1
+56: goto 60
+57: t18 = t
+58: t = t - 1
+59: goto 60
+60: t19 = 0
+61: return t19
+62: func main ends
+##############################SymbolTABLE(mainSymTab)##############################
+Name	Type		Size	Offset	Initval
+printi	function	0	0	NULL
+prints	function	0	0	NULL
+readi	function	0	0	NULL
+main	function	0	4	NULL
+##################################################
+##############################NestedSymbolTABLE(main)##############################
+Name	Type		Size	Offset	Initval
+retVal	int		4	0	NULL
+t	int		4	12	NULL
+t0	int		4	8	100
+i	int		4	52	NULL
+t1	int		4	16	0
+t2	int		4	20	100
+t3	int		4	24	NULL
+t4	int		4	28	NULL
+t5	int		4	32	NULL
+t6	int		4	36	NULL
+n	int		4	48	NULL
+m	int		4	52	NULL
+t7	int		4	48	10
+t8	int		4	52	0
+t9	int		4	56	NULL
+t10	int		4	60	NULL
+t11	int		4	64	10
+t12	int		4	68	NULL
+t13	int		4	72	100
+t14	int		4	76	NULL
+t15	int		4	80	33
+t16	int		4	84	NULL
+t17	int		4	88	NULL
+t18	int		4	92	NULL
+t19	int		4	96	0
+###########################################
+##############################NestedSymbolTABLE(printi)##############################
+Name	Type		Size	Offset	Initval
+num	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+##############################NestedSymbolTABLE(prints)##############################
+Name	Type		Size	Offset	Initval
+c	char		1	0	NULL
+retVal	int		4	1	NULL
+###########################################
+##############################NestedSymbolTABLE(readi)##############################
+Name	Type		Size	Offset	Initval
+eP	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+quad is-->i--t2--20--
+quad is-->----23--
+quad is-->----23--
+quad is-->----11--
+quad is-->----17--
+quad is-->----43--
+quad is-->i--n--38--
+quad is-->----23--
+quad is-->----42--
+quad is-->----30--
+quad is-->----35--
+quad is-->----23--
+quad is-->t6----46--
+quad is-->----26--
+quad is-->t14--t15--54--
+quad is-->----57--
+quad is-->----60--
+quad is-->----60--
+quad is-->----60--
+YESSSSSS

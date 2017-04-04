@@ -1,0 +1,398 @@
+0: func printi starts
+1: func printi ends
+2: func prints starts
+3: func prints ends
+4: func readi starts
+5: func readi ends
+6: func main starts
+7: t0 = 100
+8: l1 = t0
+9: t1 = 100
+10: l2 = t1
+11: param .LC0
+12: call prints 1
+13: t3 = 101
+14: t4 = 101
+15: t5 = 1001
+16: t6 = 1023
+17: t7 = 0
+18: i = t7
+19: t8 = 1
+20: if i <l1 goto 27
+21: t8 = 0
+22: goto 48
+23: goto 48
+24: t9 = i
+25: i = i + 1
+26: goto 19
+27: t10 = 0
+28: t10 = t10 * 101
+29: t10 = t10 + i
+30: t10 = t10 * 4
+31: t11 = 0
+32: t10 = t10 * 101
+33: t10 = t10 + t11
+34: t10 = t10 * 4
+35: t12 = 1
+36: dp[t10] = t12
+37: t13 = 0
+38: t14 = 0
+39: t14 = t14 * 101
+40: t14 = t14 + t13
+41: t14 = t14 * 4
+42: t14 = t14 * 101
+43: t14 = t14 + i
+44: t14 = t14 * 4
+45: t15 = 1
+46: dp[t14] = t15
+47: goto 24
+48: t16 = 89
+49: t17 = 0
+50: t17 = t17 * 101
+51: t17 = t17 + t16
+52: t17 = t17 * 4
+53: t18 = 98
+54: t17 = t17 * 101
+55: t17 = t17 + t18
+56: t17 = t17 * 4
+57: t19 = dp[t17]
+58: param t19
+59: call printi 1
+60: t21 = 0
+61: t22 = 0
+62: t22 = t22 * 1001
+63: t22 = t22 + t21
+64: t22 = t22 * 4
+65: t23 = a[t22]
+66: t24 = 6
+67: t25 = 0
+68: t25 = t25 * 1023
+69: t25 = t25 + t24
+70: t25 = t25 * 4
+71: t26 = b[t25]
+72: t27 = 1
+73: if t23 ==t26 goto 77
+74: t27 = 0
+75: goto 87
+76: goto 87
+77: t28 = 5
+78: t29 = 0
+79: t29 = t29 * 1023
+80: t29 = t29 + t28
+81: t29 = t29 * 4
+82: t31 = b[t29]
+83: t30 = t31
+84: t31 = t31 + 1
+85: b[t29] = t31
+86: goto 87
+87: t32 = 101
+88: t33 = 101
+89: t34 = 1
+90: i = t34
+91: t35 = 1
+92: if i <=l1 goto 99
+93: t35 = 0
+94: goto 234
+95: goto 234
+96: t36 = i
+97: i = i + 1
+98: goto 91
+99: t37 = 1
+100: j = t37
+101: t38 = 1
+102: if j <=l2 goto 109
+103: t38 = 0
+104: goto 96
+105: goto 233
+106: t39 = j
+107: j = j + 1
+108: goto 101
+109: t40 = 0
+110: t40 = t40 * 101
+111: t40 = t40 + i
+112: t40 = t40 * 4
+113: t41 = a[t40]
+114: t42 = 0
+115: t42 = t42 * 101
+116: t42 = t42 + j
+117: t42 = t42 * 4
+118: t43 = b[t42]
+119: t44 = 1
+120: if t41 ==t43 goto 124
+121: t44 = 0
+122: goto 147
+123: goto 232
+124: t45 = 0
+125: t45 = t45 * 101
+126: t45 = t45 + i
+127: t45 = t45 * 4
+128: t45 = t45 * 101
+129: t45 = t45 + j
+130: t45 = t45 * 4
+131: t46 = 1
+132: t47 = i - t46
+133: t48 = 0
+134: t48 = t48 * 101
+135: t48 = t48 + t47
+136: t48 = t48 * 4
+137: t49 = 1
+138: t50 = j - t49
+139: t48 = t48 * 101
+140: t48 = t48 + t50
+141: t48 = t48 * 4
+142: t51 = dp[t48]
+143: t52 = 1
+144: t53 = t51 + t52
+145: dp[t45] = t53
+146: goto 106
+147: t54 = 1
+148: t55 = i - t54
+149: t56 = 0
+150: t56 = t56 * 101
+151: t56 = t56 + t55
+152: t56 = t56 * 4
+153: t56 = t56 * 101
+154: t56 = t56 + j
+155: t56 = t56 * 4
+156: t57 = dp[t56]
+157: t58 = 0
+158: t58 = t58 * 101
+159: t58 = t58 + i
+160: t58 = t58 * 4
+161: t58 = t58 * 101
+162: t58 = t58 + j
+163: t58 = t58 * 4
+164: t59 = dp[t58]
+165: t60 = 1
+166: if t57 <t59 goto 170
+167: t60 = 0
+168: goto 189
+169: goto 189
+170: t61 = 0
+171: t61 = t61 * 101
+172: t61 = t61 + i
+173: t61 = t61 * 4
+174: t61 = t61 * 101
+175: t61 = t61 + j
+176: t61 = t61 * 4
+177: t62 = 1
+178: t63 = i - t62
+179: t64 = 0
+180: t64 = t64 * 101
+181: t64 = t64 + t63
+182: t64 = t64 * 4
+183: t64 = t64 * 101
+184: t64 = t64 + j
+185: t64 = t64 * 4
+186: t65 = dp[t64]
+187: dp[t61] = t65
+188: goto 189
+189: t66 = 0
+190: t66 = t66 * 101
+191: t66 = t66 + i
+192: t66 = t66 * 4
+193: t67 = 1
+194: t68 = j - t67
+195: t66 = t66 * 101
+196: t66 = t66 + t68
+197: t66 = t66 * 4
+198: t69 = dp[t66]
+199: t70 = 0
+200: t70 = t70 * 101
+201: t70 = t70 + i
+202: t70 = t70 * 4
+203: t70 = t70 * 101
+204: t70 = t70 + j
+205: t70 = t70 * 4
+206: t71 = dp[t70]
+207: t72 = 1
+208: if t69 <t71 goto 212
+209: t72 = 0
+210: goto 106
+211: goto 231
+212: t73 = 0
+213: t73 = t73 * 101
+214: t73 = t73 + i
+215: t73 = t73 * 4
+216: t73 = t73 * 101
+217: t73 = t73 + j
+218: t73 = t73 * 4
+219: t74 = 0
+220: t74 = t74 * 101
+221: t74 = t74 + i
+222: t74 = t74 * 4
+223: t75 = 1
+224: t76 = j - t75
+225: t74 = t74 * 101
+226: t74 = t74 + t76
+227: t74 = t74 * 4
+228: t77 = dp[t74]
+229: dp[t73] = t77
+230: goto 106
+231: goto 106
+232: goto 106
+233: goto 96
+234: t78 = 0
+235: t78 = t78 * 101
+236: t78 = t78 + l1
+237: t78 = t78 * 4
+238: t78 = t78 * 101
+239: t78 = t78 + l2
+240: t78 = t78 * 4
+241: t79 = dp[t78]
+242: param t79
+243: call printi 1
+244: t81 = 0
+245: return t81
+246: func main ends
+##############################SymbolTABLE(mainSymTab)##############################
+Name	Type		Size	Offset	Initval
+printi	function	0	0	NULL
+prints	function	0	0	NULL
+readi	function	0	0	NULL
+main	function	0	4	NULL
+##################################################
+##############################NestedSymbolTABLE(main)##############################
+Name	Type		Size	Offset	Initval
+retVal	int		4	0	NULL
+t0	int		4	4	100
+l1	int		4	16	100
+t1	int		4	12	100
+l2	int		4	24	100
+prints	int		4	20	NULL
+.LC0	int		4	24	NULL
+t2	int		4	28	NULL
+i	int		4	40	NULL
+j	int		4	44	NULL
+t3	int		4	40	101
+t4	int		4	44	101
+dp	[101][101]	40804	52	NULL
+t5	int		4	40856	1001
+a	[101]	101	42986	NULL
+t6	int		4	41862	1023
+b	[101]	101	43091	NULL
+t7	int		4	42890	0
+t8	int		4	42894	NULL
+t9	int		4	42898	NULL
+t10	int		4	42902	NULL
+t11	int		4	42906	0
+t12	int		4	42910	1
+t13	int		4	42914	0
+t14	int		4	42918	NULL
+t15	int		4	42922	1
+printi	int		4	42926	NULL
+t16	int		4	42930	89
+t17	int		4	42934	NULL
+t18	int		4	42938	98
+t19	int		4	42942	NULL
+t20	int		4	42946	NULL
+t21	int		4	42950	0
+t22	int		4	42954	NULL
+t23	char		1	42958	NULL
+t24	int		4	42959	6
+t25	int		4	42963	NULL
+t26	char		1	42967	NULL
+t27	int		4	42968	NULL
+t28	int		4	42972	5
+t29	int		4	42976	NULL
+t30	char		1	42980	NULL
+t31	char		1	42981	NULL
+t32	int		4	42982	101
+t33	int		4	43087	101
+t34	int		4	43192	1
+t35	int		4	43196	NULL
+t36	int		4	43200	NULL
+t37	int		4	43204	1
+t38	int		4	43208	NULL
+t39	int		4	43212	NULL
+t40	int		4	43216	NULL
+t41	char		1	43220	NULL
+t42	int		4	43221	NULL
+t43	char		1	43225	NULL
+t44	int		4	43226	NULL
+t45	int		4	43230	NULL
+t46	int		4	43234	1
+t47	int		4	43238	NULL
+t48	int		4	43242	NULL
+t49	int		4	43246	1
+t50	int		4	43250	NULL
+t51	int		4	43254	NULL
+t52	int		4	43258	1
+t53	int		4	43262	NULL
+t54	int		4	43266	1
+t55	int		4	43270	NULL
+t56	int		4	43274	NULL
+t57	int		4	43278	NULL
+t58	int		4	43282	NULL
+t59	int		4	43286	NULL
+t60	int		4	43290	NULL
+t61	int		4	43294	NULL
+t62	int		4	43298	1
+t63	int		4	43302	NULL
+t64	int		4	43306	NULL
+t65	int		4	43310	NULL
+t66	int		4	43314	NULL
+t67	int		4	43318	1
+t68	int		4	43322	NULL
+t69	int		4	43326	NULL
+t70	int		4	43330	NULL
+t71	int		4	43334	NULL
+t72	int		4	43338	NULL
+t73	int		4	43342	NULL
+t74	int		4	43346	NULL
+t75	int		4	43350	1
+t76	int		4	43354	NULL
+t77	int		4	43358	NULL
+t78	int		4	43362	NULL
+t79	int		4	43366	NULL
+t80	int		4	43370	NULL
+t81	int		4	43374	0
+###########################################
+##############################NestedSymbolTABLE(printi)##############################
+Name	Type		Size	Offset	Initval
+num	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+##############################NestedSymbolTABLE(prints)##############################
+Name	Type		Size	Offset	Initval
+c	char		1	0	NULL
+retVal	int		4	1	NULL
+###########################################
+##############################NestedSymbolTABLE(readi)##############################
+Name	Type		Size	Offset	Initval
+eP	int		4	0	NULL
+retVal	int		4	4	NULL
+###########################################
+quad is-->i--l1--27--
+quad is-->----48--
+quad is-->----48--
+quad is-->----19--
+quad is-->----24--
+quad is-->t23--t26--77--
+quad is-->----87--
+quad is-->----87--
+quad is-->----87--
+quad is-->i--l1--99--
+quad is-->----234--
+quad is-->----234--
+quad is-->----91--
+quad is-->j--l2--109--
+quad is-->----96--
+quad is-->----233--
+quad is-->----101--
+quad is-->t41--t43--124--
+quad is-->----147--
+quad is-->----232--
+quad is-->----106--
+quad is-->t57--t59--170--
+quad is-->----189--
+quad is-->----189--
+quad is-->----189--
+quad is-->t69--t71--212--
+quad is-->----106--
+quad is-->----231--
+quad is-->----106--
+quad is-->----106--
+quad is-->----106--
+quad is-->----96--
+YESSSSSS
